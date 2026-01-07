@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Sentence Types Worksheet&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Arial', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 850px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f5f5f5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.worksheet {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 3px solid #3498db;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.name-section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ecf0f1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.reference-box {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e8f4f8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid #3498db;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.reference-box h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2980b9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.sentence-type {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 10px 0 5px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.definition {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0 10px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.example {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 5px 0 15px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-style: italic;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #7f8c8d;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.directions {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fff9e6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid #f39c12;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.sentence-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 25px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fafafa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.sentence-item.correct {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #d4edda;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #28a745;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.sentence-item.incorrect {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f8d7da;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #dc3545;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.sentence-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.8;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.answer-line {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.answer-line label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.answer-line input[type="text"] {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #bdc3c7;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.checkboxes {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.checkbox-option {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.checkbox-option input[type="checkbox"] {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.checkbox-option label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback.show {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback.correct {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #d4edda;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid #28a745;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #155724;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback.incorrect {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f8d7da;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid #dc3545;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #721c24;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feedback-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.check-button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 30px auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #3498db;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.check-button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #2980b9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.score-display {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e8f4f8;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #2c3e50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.score-display.show {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media print {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.worksheet {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>box-shadow: none;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.check-button {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="worksheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Sentence Types Identification Worksheet&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="name-section"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Name:&lt;/strong&gt; _________________________ &lt;strong&gt;Date:&lt;/strong&gt; _____________</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="reference-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;📚 Quick Reference Guide&lt;/h3&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-type"&gt;Simple Sentence&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="definition"&gt;Contains ONE independent clause (one subject and one verb).&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="example"&gt;Example: The dog barked loudly.&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-type"&gt;Compound Sentence&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="definition"&gt;Contains TWO or more independent clauses joined by a coordinating conjunction (for, and, nor, but, or, yet, so) or a semicolon.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="example"&gt;Example: The dog barked loudly, and the cat ran away.&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-type"&gt;Complex Sentence&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="definition"&gt;Contains ONE independent clause and at least ONE dependent clause. Common subordinating conjunctions include: because, although, when, if, since, while, after, before, unless.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="example"&gt;Example: When the dog barked loudly, the cat ran away.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="directions"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;strong&gt;Directions:&lt;/strong&gt; Read each sentence carefully. Check the box that identifies the sentence type: Simple, Compound, or Complex.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;1. Maria studied for her math test every night this week.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q1-simple" name="q1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q1-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q1-compound" name="q1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q1-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q1-complex" name="q1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q1-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback1"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;2. The library opens at nine o'clock, but I need to arrive earlier.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q2-simple" name="q2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q2-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q2-compound" name="q2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q2-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q2-complex" name="q2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q2-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback2"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;3. Because the weather was cold, we decided to stay inside.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q3-simple" name="q3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q3-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q3-compound" name="q3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q3-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q3-complex" name="q3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q3-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback3"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;4. My brother plays basketball on Saturdays.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q4-simple" name="q4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q4-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q4-compound" name="q4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q4-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q4-complex" name="q4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q4-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback4"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;5. When the bell rang, the students walked to their next class.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q5-simple" name="q5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q5-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q5-compound" name="q5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q5-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q5-complex" name="q5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q5-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback5"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;6. I wanted to go to the movies, so I asked my friends to join me.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q6-simple" name="q6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q6-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q6-compound" name="q6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q6-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q6-complex" name="q6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q6-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback6"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;7. The teacher explained the assignment clearly.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q7-simple" name="q7"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q7-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q7-compound" name="q7"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q7-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q7-complex" name="q7"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q7-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback7"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;8. Although I was tired, I finished my homework before dinner.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q8-simple" name="q8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q8-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q8-compound" name="q8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q8-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q8-complex" name="q8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q8-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback8"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;9. The concert was amazing, and everyone enjoyed the music.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q9-simple" name="q9"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q9-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q9-compound" name="q9"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q9-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q9-complex" name="q9"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q9-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback9"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="sentence-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="sentence-text"&gt;10. If you study regularly, you will improve your grades.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="checkboxes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q10-simple" name="q10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q10-simple"&gt;Simple&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q10-compound" name="q10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q10-compound"&gt;Compound&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="checkbox-option"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" id="q10-complex" name="q10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="q10-complex"&gt;Complex&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="feedback" id="feedback10"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="check-button" onclick="checkAnswers()"&gt;Check My Answers&lt;/button&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="score-display" id="scoreDisplay"&gt;&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const answers = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>1: { correct: 'simple', explanation: 'This is a SIMPLE sentence because it has only one independent clause with one subject ("Maria") and one verb ("studied"). There are no conjunctions joining two complete thoughts.' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>2: { correct: 'compound', explanation: 'This is a COMPOUND sentence because it has two independent clauses joined by the coordinating conjunction "but". Both parts could stand alone as complete sentences: "The library opens at nine o\'clock" AND "I need to arrive earlier".' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>3: { correct: 'complex', explanation: 'This is a COMPLEX sentence because it has a dependent clause ("Because the weather was cold") joined to an independent clause ("we decided to stay inside"). The word "Because" is a subordinating conjunction that makes the first part dependent.' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>4: { correct: 'simple', explanation: 'This is a SIMPLE sentence because it has only one independent clause with one subject ("My brother") and one verb ("plays"). There are no conjunctions joining multiple clauses.' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>5: { correct: 'complex', explanation: 'This is a COMPLEX sentence because it has a dependent clause ("When the bell rang") joined to an independent clause ("the students walked to their next class"). The word "When" is a subordinating conjunction.' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>6: { correct: 'compound', explanation: 'This is a COMPOUND sentence because it has two independent clauses joined by the coordinating conjunction "so". Both parts could stand alone: "I wanted to go to the movies" AND "I asked my friends to join me".' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>7: { correct: 'simple', explanation: 'This is a SIMPLE sentence because it has only one independent clause with one subject ("The teacher") and one verb ("explained"). There are no conjunctions joining multiple clauses.' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>8: { correct: 'complex', explanation: 'This is a COMPLEX sentence because it has a dependent clause ("Although I was tired") joined to an independent clause ("I finished my homework before dinner"). The word "Although" is a subordinating conjunction.' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>9: { correct: 'compound', explanation: 'This is a COMPOUND sentence because it has two independent clauses joined by the coordinating conjunction "and". Both parts could stand alone: "The concert was amazing" AND "everyone enjoyed the music".' },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>10: { correct: 'complex', explanation: 'This is a COMPLEX sentence because it has a dependent clause ("If you study regularly") joined to an independent clause ("you will improve your grades"). The word "If" is a subordinating conjunction.' }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function checkAnswers() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let score = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const total = 10;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let i = 1; i &lt;= total; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const simple = document.getElementById(`q${i}-simple`);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const compound = document.getElementById(`q${i}-compound`);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const complex = document.getElementById(`q${i}-complex`);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const feedback = document.getElementById(`feedback${i}`);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const item = simple.closest('.sentence-item');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>let userAnswer = '';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (simple.checked) userAnswer = 'simple';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>else if (compound.checked) userAnswer = 'compound';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>else if (complex.checked) userAnswer = 'complex';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (userAnswer === '') {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>feedback.className = 'feedback show incorrect';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>feedback.innerHTML = '&lt;div class="feedback-title"&gt;⚠️ No answer selected&lt;/div&gt;&lt;div&gt;Please select an answer before checking.&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>item.classList.remove('correct', 'incorrect');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else if (userAnswer === answers[i].correct) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>score++;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>feedback.className = 'feedback show correct';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>feedback.innerHTML = '&lt;div class="feedback-title"&gt;✓ Correct!&lt;/div&gt;&lt;div&gt;' + answers[i].explanation + '&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>item.classList.remove('incorrect');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>item.classList.add('correct');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>feedback.className = 'feedback show incorrect';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let wrongExplanation = '';</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (userAnswer === 'simple' &amp;&amp; answers[i].correct !== 'simple') {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>wrongExplanation = 'This is NOT a simple sentence because it has more than one clause. ';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else if (userAnswer === 'compound' &amp;&amp; answers[i].correct !== 'compound') {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>wrongExplanation = 'This is NOT a compound sentence because it does not have two independent clauses joined by a coordinating conjunction (for, and, nor, but, or, yet, so). ';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else if (userAnswer === 'complex' &amp;&amp; answers[i].correct !== 'complex') {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>wrongExplanation = 'This is NOT a complex sentence because it does not have a dependent clause with a subordinating conjunction (like because, although, when, if, since). ';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>feedback.innerHTML = '&lt;div class="feedback-title"&gt;✗ Incorrect&lt;/div&gt;&lt;div&gt;' + wrongExplanation + answers[i].explanation + '&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>item.classList.remove('correct');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>item.classList.add('incorrect');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const scoreDisplay = document.getElementById('scoreDisplay');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scoreDisplay.className = 'score-display show';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scoreDisplay.innerHTML = `Your Score: ${score} out of ${total} (${Math.round(score/total * 100)}%)`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scoreDisplay.scrollIntoView({ behavior: 'smooth', block: 'nearest' });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Prevent multiple checkboxes from being selected</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('input[type="checkbox"]').forEach(checkbox =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>checkbox.addEventListener('change', function() {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (this.checked) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const name = this.getAttribute('name');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>document.querySelectorAll(`input[name="${name}"]`).forEach(other =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (other !== this) other.checked = false;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
