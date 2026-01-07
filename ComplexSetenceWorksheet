@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Types Worksheet</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .worksheet {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .name-section {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 4px;
+        }
+        .reference-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .reference-box h3 {
+            margin-top: 0;
+            color: #2980b9;
+        }
+        .sentence-type {
+            margin: 10px 0 5px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .definition {
+            margin: 5px 0 10px 20px;
+            color: #555;
+        }
+        .example {
+            margin: 5px 0 15px 20px;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        .directions {
+            background-color: #fff9e6;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .sentence-item {
+            margin: 25px 0;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .sentence-item.correct {
+            background-color: #d4edda;
+            border-color: #28a745;
+        }
+        .sentence-item.incorrect {
+            background-color: #f8d7da;
+            border-color: #dc3545;
+        }
+        .sentence-text {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        .answer-line {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .answer-line label {
+            font-weight: bold;
+            color: #555;
+        }
+        .answer-line input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: 2px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .checkboxes {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .checkbox-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .checkbox-option input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+        .checkbox-option label {
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .feedback {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 4px;
+            display: none;
+        }
+        .feedback.show {
+            display: block;
+        }
+        .feedback.correct {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            color: #155724;
+        }
+        .feedback.incorrect {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            color: #721c24;
+        }
+        .feedback-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .check-button {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 40px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .check-button:hover {
+            background-color: #2980b9;
+        }
+        .score-display {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e8f4f8;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            display: none;
+        }
+        .score-display.show {
+            display: block;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .worksheet {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .check-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="worksheet">
+        <h1>Sentence Types Identification Worksheet</h1>
+        
+        <div class="name-section">
+            <strong>Name:</strong> _________________________ <strong>Date:</strong> _____________
+        </div>
+
+        <div class="reference-box">
+            <h3>📚 Quick Reference Guide</h3>
+            
+            <div class="sentence-type">Simple Sentence</div>
+            <div class="definition">Contains ONE independent clause (one subject and one verb).</div>
+            <div class="example">Example: The dog barked loudly.</div>
+            
+            <div class="sentence-type">Compound Sentence</div>
+            <div class="definition">Contains TWO or more independent clauses joined by a coordinating conjunction (for, and, nor, but, or, yet, so) or a semicolon.</div>
+            <div class="example">Example: The dog barked loudly, and the cat ran away.</div>
+            
+            <div class="sentence-type">Complex Sentence</div>
+            <div class="definition">Contains ONE independent clause and at least ONE dependent clause. Common subordinating conjunctions include: because, although, when, if, since, while, after, before, unless.</div>
+            <div class="example">Example: When the dog barked loudly, the cat ran away.</div>
+        </div>
+
+        <div class="directions">
+            <strong>Directions:</strong> Read each sentence carefully. Check the box that identifies the sentence type: Simple, Compound, or Complex.
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">1. Maria studied for her math test every night this week.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q1-simple" name="q1">
+                    <label for="q1-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q1-compound" name="q1">
+                    <label for="q1-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q1-complex" name="q1">
+                    <label for="q1-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback1"></div>
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">2. The library opens at nine o'clock, but I need to arrive earlier.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q2-simple" name="q2">
+                    <label for="q2-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q2-compound" name="q2">
+                    <label for="q2-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q2-complex" name="q2">
+                    <label for="q2-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback2"></div>
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">3. Because the weather was cold, we decided to stay inside.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q3-simple" name="q3">
+                    <label for="q3-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q3-compound" name="q3">
+                    <label for="q3-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q3-complex" name="q3">
+                    <label for="q3-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback3"></div>
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">4. My brother plays basketball on Saturdays.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q4-simple" name="q4">
+                    <label for="q4-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q4-compound" name="q4">
+                    <label for="q4-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q4-complex" name="q4">
+                    <label for="q4-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback4"></div>
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">5. When the bell rang, the students walked to their next class.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q5-simple" name="q5">
+                    <label for="q5-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q5-compound" name="q5">
+                    <label for="q5-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q5-complex" name="q5">
+                    <label for="q5-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback5"></div>
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">6. I wanted to go to the movies, so I asked my friends to join me.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q6-simple" name="q6">
+                    <label for="q6-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q6-compound" name="q6">
+                    <label for="q6-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q6-complex" name="q6">
+                    <label for="q6-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback6"></div>
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">7. The teacher explained the assignment clearly.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q7-simple" name="q7">
+                    <label for="q7-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q7-compound" name="q7">
+                    <label for="q7-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q7-complex" name="q7">
+                    <label for="q7-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback7"></div>
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">8. Although I was tired, I finished my homework before dinner.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q8-simple" name="q8">
+                    <label for="q8-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q8-compound" name="q8">
+                    <label for="q8-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q8-complex" name="q8">
+                    <label for="q8-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback8"></div>
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">9. The concert was amazing, and everyone enjoyed the music.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q9-simple" name="q9">
+                    <label for="q9-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q9-compound" name="q9">
+                    <label for="q9-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q9-complex" name="q9">
+                    <label for="q9-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback9"></div>
+        </div>
+
+        <div class="sentence-item">
+            <div class="sentence-text">10. If you study regularly, you will improve your grades.</div>
+            <div class="checkboxes">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q10-simple" name="q10">
+                    <label for="q10-simple">Simple</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q10-compound" name="q10">
+                    <label for="q10-compound">Compound</label>
+                </div>
+                <div class="checkbox-option">
+                    <input type="checkbox" id="q10-complex" name="q10">
+                    <label for="q10-complex">Complex</label>
+                </div>
+            </div>
+            <div class="feedback" id="feedback10"></div>
+        </div>
+
+        <button class="check-button" onclick="checkAnswers()">Check My Answers</button>
+        
+        <div class="score-display" id="scoreDisplay"></div>
+
+    </div>
+
+    <script>
+        const answers = {
+            1: { correct: 'simple', explanation: 'This is a SIMPLE sentence because it has only one independent clause with one subject ("Maria") and one verb ("studied"). There are no conjunctions joining two complete thoughts.' },
+            2: { correct: 'compound', explanation: 'This is a COMPOUND sentence because it has two independent clauses joined by the coordinating conjunction "but". Both parts could stand alone as complete sentences: "The library opens at nine o\'clock" AND "I need to arrive earlier".' },
+            3: { correct: 'complex', explanation: 'This is a COMPLEX sentence because it has a dependent clause ("Because the weather was cold") joined to an independent clause ("we decided to stay inside"). The word "Because" is a subordinating conjunction that makes the first part dependent.' },
+            4: { correct: 'simple', explanation: 'This is a SIMPLE sentence because it has only one independent clause with one subject ("My brother") and one verb ("plays"). There are no conjunctions joining multiple clauses.' },
+            5: { correct: 'complex', explanation: 'This is a COMPLEX sentence because it has a dependent clause ("When the bell rang") joined to an independent clause ("the students walked to their next class"). The word "When" is a subordinating conjunction.' },
+            6: { correct: 'compound', explanation: 'This is a COMPOUND sentence because it has two independent clauses joined by the coordinating conjunction "so". Both parts could stand alone: "I wanted to go to the movies" AND "I asked my friends to join me".' },
+            7: { correct: 'simple', explanation: 'This is a SIMPLE sentence because it has only one independent clause with one subject ("The teacher") and one verb ("explained"). There are no conjunctions joining multiple clauses.' },
+            8: { correct: 'complex', explanation: 'This is a COMPLEX sentence because it has a dependent clause ("Although I was tired") joined to an independent clause ("I finished my homework before dinner"). The word "Although" is a subordinating conjunction.' },
+            9: { correct: 'compound', explanation: 'This is a COMPOUND sentence because it has two independent clauses joined by the coordinating conjunction "and". Both parts could stand alone: "The concert was amazing" AND "everyone enjoyed the music".' },
+            10: { correct: 'complex', explanation: 'This is a COMPLEX sentence because it has a dependent clause ("If you study regularly") joined to an independent clause ("you will improve your grades"). The word "If" is a subordinating conjunction.' }
+        };
+
+        function checkAnswers() {
+            let score = 0;
+            const total = 10;
+
+            for (let i = 1; i <= total; i++) {
+                const simple = document.getElementById(`q${i}-simple`);
+                const compound = document.getElementById(`q${i}-compound`);
+                const complex = document.getElementById(`q${i}-complex`);
+                const feedback = document.getElementById(`feedback${i}`);
+                const item = simple.closest('.sentence-item');
+
+                let userAnswer = '';
+                if (simple.checked) userAnswer = 'simple';
+                else if (compound.checked) userAnswer = 'compound';
+                else if (complex.checked) userAnswer = 'complex';
+
+                if (userAnswer === '') {
+                    feedback.className = 'feedback show incorrect';
+                    feedback.innerHTML = '<div class="feedback-title">⚠️ No answer selected</div><div>Please select an answer before checking.</div>';
+                    item.classList.remove('correct', 'incorrect');
+                } else if (userAnswer === answers[i].correct) {
+                    score++;
+                    feedback.className = 'feedback show correct';
+                    feedback.innerHTML = '<div class="feedback-title">✓ Correct!</div><div>' + answers[i].explanation + '</div>';
+                    item.classList.remove('incorrect');
+                    item.classList.add('correct');
+                } else {
+                    feedback.className = 'feedback show incorrect';
+                    let wrongExplanation = '';
+                    
+                    if (userAnswer === 'simple' && answers[i].correct !== 'simple') {
+                        wrongExplanation = 'This is NOT a simple sentence because it has more than one clause. ';
+                    } else if (userAnswer === 'compound' && answers[i].correct !== 'compound') {
+                        wrongExplanation = 'This is NOT a compound sentence because it does not have two independent clauses joined by a coordinating conjunction (for, and, nor, but, or, yet, so). ';
+                    } else if (userAnswer === 'complex' && answers[i].correct !== 'complex') {
+                        wrongExplanation = 'This is NOT a complex sentence because it does not have a dependent clause with a subordinating conjunction (like because, although, when, if, since). ';
+                    }
+                    
+                    feedback.innerHTML = '<div class="feedback-title">✗ Incorrect</div><div>' + wrongExplanation + answers[i].explanation + '</div>';
+                    item.classList.remove('correct');
+                    item.classList.add('incorrect');
+                }
+            }
+
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            scoreDisplay.className = 'score-display show';
+            scoreDisplay.innerHTML = `Your Score: ${score} out of ${total} (${Math.round(score/total * 100)}%)`;
+            scoreDisplay.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Prevent multiple checkboxes from being selected
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    const name = this.getAttribute('name');
+                    document.querySelectorAll(`input[name="${name}"]`).forEach(other => {
+                        if (other !== this) other.checked = false;
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
